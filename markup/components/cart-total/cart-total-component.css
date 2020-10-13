@@ -1,0 +1,51 @@
+.total-amount-container {
+    border: 1px solid #000;
+    margin-top: 25px;
+}
+
+.total-amount-container .total-header-text {
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.total-amount-container .total-item-amount-section {
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 10px;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.total-amount-container .order-total {
+    background: #D2DEE2;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+.total-amount-container .order-total .order-total-text {
+    max-width: 92px;
+    width: 25%;
+    font-weight: bold;
+}
+
+.total-amount-container .order-total .item-sub-total {
+    font-weight: bold;
+}
+
+.total-amount-container .total-items,
+.total-amount-container .total-item-disc,
+.total-amount-container .total-item-price {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.total-amount-container .total-item-price {
+    text-align: right;
+}

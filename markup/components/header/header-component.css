@@ -1,0 +1,33 @@
+.header-container {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    padding: 0 10px;
+    position: relative;
+}
+
+.header-container .header-text {
+    color: #000;
+    margin: 0;
+    padding: 5px 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.header-container .header-toast-msg {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.header-container .header-toast-msg span {
+    background: limegreen;
+    padding: 3px 10px;
+}
+
+@media only screen and (max-width: 425px) {
+    .header-container .header-toast-msg {
+        text-align: center;
+        top: 40px;
+    }
+}
