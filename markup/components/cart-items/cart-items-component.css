@@ -79,6 +79,10 @@
     text-align: right;
 }
 
+.cart-items-calc-container .added-items-section .items-table tbody.added-items-list tr .list-item-price::before {
+    content: "\0024";
+}
+
 @media only screen and (max-width: 425px) {
     .cart-items-calc-container {
         width: 100%;
