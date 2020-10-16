@@ -1,0 +1,86 @@
+.cart-items-calc-container {
+    margin-top: 20px;
+    width: 30%;
+}
+
+.cart-items-calc-container .added-items-section {
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+}
+
+.cart-items-calc-container .added-items-section .items-table {
+    width: 100%;
+}
+
+.cart-items-calc-container .added-items-section .items-table thead {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.cart-items-calc-container .added-items-section .items-table thead tr th.qty-heading {
+    text-align: center;
+}
+
+.cart-items-calc-container .added-items-section .items-table thead tr th.price-heading {
+    text-align: right;
+}
+
+.cart-items-calc-container .added-items-section .items-table tbody.added-items-list tr td .item-list-details {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border: 1px solid;
+    padding: 0 10px;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.cart-items-calc-container .added-items-section .items-table tbody.added-items-list tr td .item-list-details .item--details {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.cart-items-calc-container .added-items-section .items-table tbody.added-items-list tr td .item-list-details .item--details .item-list-image {
+    margin-right: 10px;
+}
+
+.cart-items-calc-container .added-items-section .items-table tbody.added-items-list tr td .item-list-details .item--details .item-list-name {
+    max-width: 110px;
+}
+
+.cart-items-calc-container .added-items-section .items-table tbody.added-items-list tr td .item-list-details .item-list-remove {
+    cursor: pointer;
+}
+
+.cart-items-calc-container .added-items-section .items-table tbody.added-items-list tr td input[type=button] {
+    height: 27px;
+    width: 27px;
+    background: none;
+    border: none;
+    text-align: center;
+    outline: none;
+}
+
+.cart-items-calc-container .added-items-section .items-table tbody.added-items-list tr td input[type=text] {
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    outline: none;
+}
+
+.cart-items-calc-container .added-items-section .items-table tbody.added-items-list tr .list-item-qty {
+    text-align: center;
+}
+
+.cart-items-calc-container .added-items-section .items-table tbody.added-items-list tr .list-item-price {
+    text-align: right;
+}
+
+@media only screen and (max-width: 425px) {
+    .cart-items-calc-container {
+        width: 100%;
+    }
+}

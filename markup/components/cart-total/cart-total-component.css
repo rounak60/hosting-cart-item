@@ -1,51 +1,63 @@
 .total-amount-container {
-    border: 1px solid #000;
-    margin-top: 25px;
+    margin-top: 20px;
+    border: 1px solid;
 }
 
 .total-amount-container .total-header-text {
     font-weight: bold;
-    padding: 0 10px;
+    padding: 5px 10px 0;
 }
 
-.total-amount-container .total-item-amount-section {
-    display: -ms-flexbox;
-    display: flex;
-    padding: 0 10px;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+.total-amount-container .total-item-amount-section .gross-total-table {
+    width: 100%;
+    padding: 5px 10px 0;
 }
 
-.total-amount-container .order-total {
-    background: #D2DEE2;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    padding: 5px 10px;
+.total-amount-container .total-item-amount-section .gross-total-table tbody tr td.total-text {
+    width: 50%;
+    padding-left: 10px;
 }
 
-.total-amount-container .order-total .order-total-text {
-    max-width: 92px;
-    width: 25%;
-    font-weight: bold;
-}
-
-.total-amount-container .order-total .item-sub-total {
-    font-weight: bold;
-}
-
-.total-amount-container .total-items,
-.total-amount-container .total-item-disc,
-.total-amount-container .total-item-price {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-}
-
-.total-amount-container .total-item-price {
+.total-amount-container .total-item-amount-section .gross-total-table tbody tr .item-total,
+.total-amount-container .total-item-amount-section .gross-total-table tbody tr .disc-total,
+.total-amount-container .total-item-amount-section .gross-total-table tbody tr .type-disc-total,
+.total-amount-container .total-item-amount-section .gross-total-table tbody tr .gross-total {
     text-align: right;
+    padding-right: 10px;
+}
+
+.total-amount-container .total-item-amount-section .gross-total-table tbody tr .item-total::before,
+.total-amount-container .total-item-amount-section .gross-total-table tbody tr .disc-total::before,
+.total-amount-container .total-item-amount-section .gross-total-table tbody tr .type-disc-total::before {
+    content: "\0024";
+}
+
+.total-amount-container .total-item-amount-section .gross-total-table tbody tr .disc-total::before,
+.total-amount-container .total-item-amount-section .gross-total-table tbody tr .type-disc-total::before {
+    content: "\2212" "\0024";
+}
+
+.total-amount-container .total-item-amount-section .order-total-table {
+    width: 100%;
+    background: #D2DEE2;
+}
+
+.total-amount-container .total-item-amount-section .order-total-table tbody tr .total-text {
+    width: 50%;
+    padding-left: 10px;
+}
+
+.total-amount-container .total-item-amount-section .order-total-table tbody tr .gross-total {
+    text-align: right;
+    padding-right: 10px;
+}
+
+.total-amount-container .total-item-amount-section .order-total-table tbody tr .gross-total::before {
+    content: "\0024";
+}
+
+@media only screen and (max-width: 425px) {
+    .total-amount-container {
+        width: 100%;
+    }
 }
